@@ -11,11 +11,11 @@
 <br/>
 <h3>About User App</h3>
 <p>It is a react application  which fech the data of user from API and  display it when we click on view user button. i have use state hook and other functionalilty of react js also it has a loader which run while fetching data from Api.</p>
-<a href="https://festive-joliot-474bea.netlify.app/">link to the webpage</a>
-<br/>
-<a href="https://github.com/Shubham56-droid/LGMVIP-WebDev/tree/main/Task-2">link to the projects</a>
-<br/>
+
+![ScreenShot](/screenshots/image1.png)
 <h3>Images of application</h3>
-<img src="./image1.png"  />
+<img src="C:\Users\infom\Desktop\image1.png"  />
 <br/>
 <img src="./image2.png"  />
+![ [(C:\Users\infom\Desktop\image1.png)
+
