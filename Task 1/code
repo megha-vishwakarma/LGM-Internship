@@ -1,1 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Laptop Mart</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+<body>
+    
+ <!--internal CSS for cards and heading-->   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">     
+<style type="text/css">
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
 
+ margin: 2%;
+}
+
+.card{          /*Card properties*/
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    opacity: 10;
+    background-color: #E8DFE9;
+     /*for fliping*/
+   /* transition: transfrom 1s ease-in-out;  
+    transform-style: preserve-3d;*/
+    }
+    .card:hover{
+        margin-left: 5px;
+       /* box-shadow: 0 10px #8C145E ;
+        border-style: solid;*/
+        transform: translateY(4px);
+        color:whitesmoke;
+         background-color: #2E4053 ;
+        font-weight: 500;
+        border-radius: 15px;
+  box-shadow: 0 15px 15px #AD1573  ;
+    }   
+    
+  /*  .card:hover{transform: rotateY(180deg);}*/
+    
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{             /*Button Attributes*/
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color:#D2D9F2;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+button:hover{
+  background-color: #6C3483;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+    h2{
+        text-align:center;
+        font-family: Georgia;
+        font-size: 20px;
+        color:beige;
+    }
+
+    .header {       /*for heading*/
+  padding: 45px;
+  text-align: center;
+  background: #123648;
+  color: white;
+  font-size: 110px;
+        font-family: "Audiowide", sans-serif;
+        text-shadow: 4px 4px 4px #778BA5; /*color of shadow and size*/
+}
+   
+</style>    <!--End of Internal CSS -->
+   
+    
+    <!--Natigation Bar-->
+    <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">Latest</a>
+            <a href="#about">Blog</a>
+            <a href="#about">More</a>
+            <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="login-container">
+    <form>
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>   <!--End of Natigation Bar-->
+
+    
+    
+    <!--Heading-->
+    <div class="header">
+ <h6>Laptop mart</h6>
+    </div>  <!--End of Heading-->
+    <br><br>
+
+<center>
+    <!--Image Slider-->
+    <div class="slider">
+<div class="slides">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    
+    <div class="slide first">
+        <img src="1.png" alt="">
+    </div>
+    <div class="slide">
+        <img src="2.png" alt="">
+    </div>
+    <div class="slide">
+        <img src="5.png" alt="">
+    </div>
+    <div class="slide">
+        <img src="6.png" alt="">
+    </div>
+    
+    <!--Auto navigation-->
+    <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+    </div>
+    
+    <!--Manual nevigation-->
+    <div class="nevigation-manual"> 
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    </div>
+   
+    
+    </div>
+ </div>
+        
+        <script type="text/javascript">
+            var counter=1;
+            setInterval(function(){
+                document.getElementById('radio'+counter).checked=true;
+                counter++;
+                if(counter>4)
+                    {counter=1;}
+            },5000);
+        </script>
+    <!--End of Image Slider-->
+</center>
+<br><br><h2>Explore more</h2><hr><br>
+    
+    <!--Laptop Cards-->
+
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/a1d8c187-f50c-4c97-8cde-04d65c6c20e421061305_182x182.jpg">
+</div>
+<div class="title">
+ <h1>
+HP Chromebook x360</h1>
+</div>
+<div class="des">
+ <p>Thin and Light Touchscreen Laptop</p>
+<button>Read More...</button>
+</div>
+</div>
+  
+<!--cards -->  
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/fe804fbf-6b3c-4094-9d02-3ccff006188821200608_182x182.jpg">
+</div>
+<div class="title">
+ <h1>
+Asus ROG Zephyruse</h1>
+</div>
+<div class="des">
+ <p>10th Gen|32GB RAM|512GB SSD|8GB Graphics</p>
+<button onclick="window.location.href='file:///E:/PROGRAMS/College%20website/laptop%20WEBPAGE/page1.html'">Read More...</button>
+</div>
+</div>
+    
+  <!--cards -->  
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/c2fcb1be-2442-4ba7-b5ee-e44fd933ebb021140654_182x182.jpg">
+</div>
+<div class="title">
+ <h1>HP Pavilion Aero</h1>
+</div>
+<div class="des">
+ <p>Ryzen 5 5600U|16 GB RAM,1 TB SSD|13.3( 33.78 cm) Diagonal</p>
+<button>Read More...</button>
+</div>
+</div>
+    
+  <!--cards -->  
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/11657649-c9b3-4f4e-bb52-77be69de0b4a21060752_182x182.jpg">
+</div>
+<div class="title">
+ <h1>IdeaPad Flex 5 14</h1>
+</div>
+<div class="des">
+ <p>11th Gen/i7|16 GB RAM|1TB SSD |Windows 11</p>
+<button>Read More...</button>
+</div>
+</div>
+ <div class="main">
+<div class="card">
+
+<div class="image">
+   <!--img src="https://m.media-amazon.com/images/I/71hI3GBPvVL._AC_UY327_FMwebp_QL65_.jpg"-->
+   <img src="https://m.media-amazon.com/images/I/41kcCshWHTL._AC_UY327_QL65_.jpg">
+</div>
+<div class="title">
+ <h1>Lenovo Latitude X260</h1>
+</div>
+<div class="des">
+ <p>Intel Core i3-6100u|6th Gen|4 GB Ram|128 GB SSD</p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+<div class="image">
+   <!--img src="https://img.giznext.com/assets/model/78/13593/profile/acer-nitro-an515-57-nh-qd8si-002-gaming-laptop-1630141415.jpg?width=240"-->
+    <img src="https://m.media-amazon.com/images/I/61mGpXzz01L._AC_UY327_FMwebp_QL65_.jpg">
+</div>
+<div class="title">
+ <h1>ASUS VivoBook 14</h1>
+</div>
+<div class="des">
+ <p>Core i3-1005G1|10th Gen|14 inches FHD|4GB/256GB SSD</p>
+<button>Read More...</button>
+</div>
+</div>
+    <!--cards -->
+<div class="card">
+<div class="image">
+   <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07951388.png?imwidth=278&imdensity=1">
+</div>
+<div class="title">
+ <h1>HP 14s Thin and Light </h1>
+</div>
+<div class="des">
+ <p>AMD Ryzen 5-3500U/8GB/512 SSD/Windows 10</p>
+<button>Read More...</button>
+</div>
+</div>
+    <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07963854.png?imwidth=278&imdensity=1">
+</div>
+<div class="title">
+ <h1>HP Chromebook MediaTek</h1>
+</div>
+<div class="des">
+ <p>Touchscreen|4GB/64GB/ Indigo Blue|Chrome OS</p>
+<button>Read More...</button>
+</div>
+</div>
+    
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/57cf5322-4981-462c-9671-70082107d10e_182x182.jpg">
+</div>
+<div class="title">
+ <h1>Microsoft Surface3</h1>
+</div>
+<div class="des">
+ <p>Core i5 10th Gen|8GB RAM/ 128GB SSD|13.5 (34.29 cm)</p>
+<button>Read More...</button>
+</div>
+</div>
+    
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/9a653c05-9018-4a9d-a449-6487858af7f7_182x182.jpg">
+</div>
+<div class="title">
+ <h1>HP 15s-du3060TX</h1>
+</div>
+<div class="des">
+ <p>11th Gen i5|8 GB RAM 1 TB HDD|2 GB NVIDIA Graphics</p>
+<button>Read More...</button>
+</div>
+</div>
+    
+    
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/7034294c-ef5c-4688-8791-fd582e1e7bda_182x182.jpg">
+</div>
+<div class="title">
+ <h1>HP Pavilion-15AX</h1>
+</div>
+<div class="des">
+ <p>Ryzen 5 4600H|8 GB RAM / 1TB HDD +256GB SSD 4 GB NVIDIAs</p>
+<button>Read More...</button>
+</div>
+</div>
+    
+ <!--cards -->   
+<div class="card">
+
+<div class="image">
+   <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/e294abbb-eb8c-4ba2-aed1-2773d9221ebd_182x182.jpg">
+</div>
+<div class="title">
+ <h1>Asus TUF F15HN258TS </h1>
+</div>
+<div class="des">
+ <p>10th i5 Processor|8GB RAM 512GB SSD/NVIDIA 4GB </p>
+<button>Read More...</button>
+</div>
+</div>
+  
+    </div>    <!--End of Laptop Cards-->  
+   
+    <hr>
+    <br><br>
+    
+    <!--footer>
+        Laptop Mart
+    </footer-->
+ <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">Laptop</a></li>
+  	 				<li><a href="#">Mouse</a></li>
+  	 				<li><a href="#">KeyBoard</a></li>
+  	 				<li><a href="#">Computer Accessories</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+           <br> <div class="footer-col"><h4>Created by ~ Megha V</h4></div>
+  	 	</div>
+  	 </div>
+  </footer><!--End of footer-->
+    
+    
+    
+    
+    
+</body>
+
+</html>
