@@ -19,3 +19,5 @@
 <img src="./image2.png"  />
 ![ [(C:\Users\infom\Desktop\image1.png)
 
+![image1](https://user-images.githubusercontent.com/70430389/147779633-3e4ffba3-231d-48bd-8945-d39533800c01.png)
+![image2](https://user-images.githubusercontent.com/70430389/147779643-ab0660b3-015c-4df7-b3a9-056af6db8898.png)
